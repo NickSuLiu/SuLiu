@@ -1,0 +1,223 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/nine"
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:layout_alignBaseline="@+id/eight"
+            android:layout_alignBottom="@+id/eight"
+            android:layout_toRightOf="@+id/eight"
+            android:onClick="clickHandler"
+            android:text="9"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/eight"
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:layout_alignBaseline="@+id/seven"
+            android:layout_alignBottom="@+id/seven"
+            android:layout_toRightOf="@+id/seven"
+            android:onClick="clickHandler"
+            android:text="8"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/four"
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/seven"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="20dp"
+            android:onClick="clickHandler"
+            android:text="4"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/five"
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:layout_alignBaseline="@+id/four"
+            android:layout_alignBottom="@+id/four"
+            android:layout_alignLeft="@+id/eight"
+            android:onClick="clickHandler"
+            android:text="5"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/six"
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:layout_alignBaseline="@+id/five"
+            android:layout_alignBottom="@+id/five"
+            android:layout_toRightOf="@+id/five"
+            android:onClick="clickHandler"
+            android:text="6"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/two"
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:layout_alignBaseline="@+id/one"
+            android:layout_alignBottom="@+id/one"
+            android:layout_alignLeft="@+id/five"
+            android:onClick="clickHandler"
+            android:text="2"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/three"
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:layout_alignBaseline="@+id/two"
+            android:layout_alignBottom="@+id/two"
+            android:layout_alignLeft="@+id/six"
+            android:onClick="clickHandler"
+            android:text="3"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/one"
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/four"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="20dp"
+            android:onClick="clickHandler"
+            android:text="1"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/divide"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:layout_alignBaseline="@+id/six"
+            android:layout_alignBottom="@+id/six"
+            android:layout_alignLeft="@+id/multiply"
+            android:onClick="clickHandler"
+            android:text="/"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:layout_alignBaseline="@+id/three"
+            android:layout_alignBottom="@+id/three"
+            android:layout_alignRight="@+id/divide"
+            android:onClick="clickHandler"
+            android:text="+"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/multiply"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:layout_above="@+id/four"
+            android:layout_toRightOf="@+id/nine"
+            android:onClick="clickHandler"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/zero"
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/two"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/four"
+            android:onClick="clickHandler"
+            android:text="0"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/equal"
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:layout_alignBottom="@+id/zero"
+            android:layout_alignLeft="@+id/three"
+            android:onClick="clickHandler"
+            android:text="="
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:layout_alignBaseline="@+id/equal"
+            android:layout_alignBottom="@+id/equal"
+            android:layout_toRightOf="@+id/equal"
+            android:onClick="clickHandler"
+            android:text="-"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/plot"
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:layout_alignBaseline="@+id/zero"
+            android:layout_alignBottom="@+id/zero"
+            android:layout_alignLeft="@+id/one"
+            android:layout_marginTop="20dp"
+            android:onClick="clickHandler"
+            android:text="."
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/seven"
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/clear"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/zero"
+            android:onClick="clickHandler"
+            android:text="7"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="39dp"
+            android:background="@android:drawable/edit_text"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:hint=""
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:text="0"
+            android:textSize="30sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/edit"
+            android:onClick="clickHandler"
+            android:text="清零"
+            android:textSize="25sp" 
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
